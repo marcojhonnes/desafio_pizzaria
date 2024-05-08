@@ -29,28 +29,41 @@ header .content{
     align-items: center;
     background-color: #1f1e1f;
     position: fixed;
-    padding-left: 30rem;
+    padding-left: 5rem;
 }
+
 
 .logo {
     width: 70px;
     height: auto;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+    
 }
 
 
-.logo h3 {
+.content .logo {
    color: white;
-   font-size: 1.6rem;
+   font-size: 3rem;
+   display: flex;
+   justify-content: start;
+   flex-direction: row;
 
 }
 
-
+.content .logo h3 {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+}
 .logo img {
     width: 100%;
     height: 100%;
+}
+
+body .content .logo img {
+    display:  flex;
+    justify-content: start;
+    flex-direction: row;
 }
 
 .content .list-menu {
@@ -58,9 +71,10 @@ header .content{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    list-style: none;
 }
 
-.content .list-menu li a{
+.content .list-menu li a {
     padding-top: 3rem;
     padding-bottom: 2rem;
     padding-left: 1rem;
@@ -142,7 +156,7 @@ header .content{
 .btn {
     width: 480px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
    
 }
 
@@ -158,7 +172,7 @@ header .content{
     justify-content: center;
 }
 
-.content sobre {
+.contentsobre {
     
     display: flex;
     flex-direction: column;
@@ -175,13 +189,14 @@ header .content{
 .sobre-nos img {
     width: 400px;
     height: 400px;
-    margin-top: 10rem;
+    margin-top: 20rem;
     margin-left: 10rem;
     border: 2px solid rgb(155, 155, 155);
 }
 
 .contentsobre h2 {
    font-size: 6rem;
+   margin-top: 15rem;
    margin-bottom: 1rem;
    font-family: 'Indie Flower', cursive;
 }
@@ -191,6 +206,10 @@ header .content{
    font-size: 1.8rem;
    width: 600px;
 }
+
+
+
+/* seção contatos */
 
 .contatos {
     width: 100%;
@@ -230,16 +249,6 @@ header .content{
     color: #ffc506;
 }
 
-footer {
-    height: 25px;
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    font-size: 1.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-}
 
 @media (max-width: 1200px) {
     .main {
@@ -383,10 +392,15 @@ footer {
          align-items: center;
      }
 
-     .contatos-secao {
+.contatos-secao {
        width: 200px;
         
     }
+
+.contatos-secao li a {
+    color: #000000;
+}
+
     .conteudo-principal h2 {
         width: 200px;
         text-align: center;
@@ -517,6 +531,7 @@ font-family: 'Indie Flower', cursive;
     display: flex;
     justify-content: center;
     font-family: 'Indie Flower', cursive;
+    font-size: 3rem;
 }
 
 .formulario label {
@@ -575,7 +590,40 @@ button:hover {
    color: #000000;
 }
 
-footer {
+
+.item-contato li a {
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+.item-contato li a:hover{
+    background-color: #333333;
+    border-bottom: 4px solid #ffc506;  
+    color: #ffc506;
+}
+
+.item-contato img {
+    width: 5rem;
+}
+.item-contato li {
+    list-style: none;
+    
+}
+
+.item-contato li a 
+/* roda-pé */
+footer {
+    height: 25px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
 }
